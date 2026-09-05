@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/GITHUB_USER/cat-protector/actions/workflows/ci.yml"><img src="https://github.com/GITHUB_USER/cat-protector/actions/workflows/ci.yml/badge.svg" alt="CI status"></a>
+  <a href="https://github.com/brandonmontez/cat-protector/actions/workflows/ci.yml"><img src="https://github.com/brandonmontez/cat-protector/actions/workflows/ci.yml/badge.svg" alt="CI status"></a>
   <img src="https://img.shields.io/badge/macOS-13%2B-0a84ff" alt="macOS 13 or later">
   <img src="https://img.shields.io/badge/Swift-5.9-f05138" alt="Swift 5.9">
   <img src="https://img.shields.io/badge/dependencies-none-2ea043" alt="No dependencies">
@@ -50,7 +50,7 @@ xattr -dr com.apple.quarantine "/Applications/Cat Protector.app"
 Requires Xcode or the Command Line Tools on macOS 13 or later. No other dependencies.
 
 ```bash
-git clone https://github.com/GITHUB_USER/cat-protector.git
+git clone https://github.com/brandonmontez/cat-protector.git
 cd cat-protector
 make install
 ```
