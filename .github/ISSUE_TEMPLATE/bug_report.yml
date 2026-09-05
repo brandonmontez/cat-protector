@@ -1,0 +1,44 @@
+name: Bug report
+description: Something is not working the way it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time. A few details make bugs much faster to fix.
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: e.g. macOS 15.1
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: How did you install Cat Protector?
+      options:
+        - Downloaded a release
+        - Built from source
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Timing log (for latency issues)
+      description: |
+        Run this in Terminal, press the shortcut a few times, and paste the output.
+        `log stream --predicate 'subsystem == "com.catprotector.CatProtector"' --level debug --style compact`
+      render: text
+  - type: input
+    id: keyboard
+    attributes:
+      label: Keyboard and layout
+      description: Only needed if the shortcut misbehaves.
+      placeholder: e.g. built-in MacBook keyboard, US layout

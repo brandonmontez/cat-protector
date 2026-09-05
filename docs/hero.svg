@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" width="760" height="320" role="img" aria-label="Menu bar before and after pressing Control Option Command L: the paw print becomes the text 'Control Option Command L to unlock'.">
+  <defs>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c2c2e"/>
+      <stop offset="1" stop-color="#1c1c1e"/>
+    </linearGradient>
+    <linearGradient id="key" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e5e5ea"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffad52"/>
+      <stop offset="1" stop-color="#e8546b"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif; }
+    .label { fill: #8e8e93; font-size: 12px; letter-spacing: 0.12em; font-weight: 600; }
+    .bartext { fill: #ffffff; font-size: 14px; }
+    .cap { fill: #1c1c1e; font-size: 20px; text-anchor: middle; }
+    .hint { fill: #8e8e93; font-size: 13px; }
+  </style>
+
+  <!-- Row 1: unlocked menu bar -->
+  <text class="label" x="20" y="52">UNLOCKED</text>
+  <g transform="translate(120 24)">
+    <rect width="620" height="44" rx="10" fill="url(#bar)" stroke="#3a3a3c"/>
+    <!-- paw print -->
+    <g transform="translate(436 22)" fill="#ffffff">
+      <ellipse cx="0" cy="3.5" rx="5.2" ry="4.2"/>
+      <circle cx="-6.2" cy="-2.2" r="2.3"/>
+      <circle cx="-2.3" cy="-6" r="2.3"/>
+      <circle cx="2.3" cy="-6" r="2.3"/>
+      <circle cx="6.2" cy="-2.2" r="2.3"/>
+    </g>
+    <!-- wifi -->
+    <g transform="translate(478 27)" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round">
+      <path d="M-8 -5 A11 11 0 0 1 8 -5"/>
+      <path d="M-5 -1.5 A7 7 0 0 1 5 -1.5"/>
+      <circle cx="0" cy="2.2" r="1.2" fill="#ffffff" stroke="none"/>
+    </g>
+    <!-- battery -->
+    <g transform="translate(506 16)">
+      <rect x="0" y="0" width="24" height="12" rx="3" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      <rect x="2" y="2" width="16" height="8" rx="1.5" fill="#ffffff"/>
+      <rect x="25.5" y="3.5" width="2" height="5" rx="1" fill="#ffffff"/>
+    </g>
+    <text class="bartext" x="606" y="27" text-anchor="end" font-weight="500">Tue 9:41</text>
+  </g>
+
+  <!-- Middle: the shortcut -->
+  <text class="label" x="20" y="164">PRESS</text>
+  <g transform="translate(120 136)">
+    <g transform="translate(0 0)"><rect width="48" height="48" rx="10" fill="url(#key)" stroke="#c7c7cc"/><text class="cap" x="24" y="31">⌃</text></g>
+    <g transform="translate(60 0)"><rect width="48" height="48" rx="10" fill="url(#key)" stroke="#c7c7cc"/><text class="cap" x="24" y="31">⌥</text></g>
+    <g transform="translate(120 0)"><rect width="48" height="48" rx="10" fill="url(#key)" stroke="#c7c7cc"/><text class="cap" x="24" y="31">⌘</text></g>
+    <g transform="translate(180 0)"><rect width="48" height="48" rx="10" fill="url(#key)" stroke="#c7c7cc"/><text class="cap" x="24" y="31" font-weight="600">L</text></g>
+    <text class="hint" x="250" y="30">Press once to lock, again to unlock. Change it to anything you like.</text>
+  </g>
+
+  <!-- Row 3: locked menu bar -->
+  <text class="label" x="20" y="252">LOCKED</text>
+  <g transform="translate(120 224)">
+    <rect width="620" height="44" rx="10" fill="url(#bar)" stroke="#3a3a3c"/>
+    <text class="bartext" x="450" y="27" text-anchor="end">⌃⌥⌘L to unlock</text>
+    <g transform="translate(478 27)" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round">
+      <path d="M-8 -5 A11 11 0 0 1 8 -5"/>
+      <path d="M-5 -1.5 A7 7 0 0 1 5 -1.5"/>
+      <circle cx="0" cy="2.2" r="1.2" fill="#ffffff" stroke="none"/>
+    </g>
+    <g transform="translate(506 16)">
+      <rect x="0" y="0" width="24" height="12" rx="3" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      <rect x="2" y="2" width="16" height="8" rx="1.5" fill="#ffffff"/>
+      <rect x="25.5" y="3.5" width="2" height="5" rx="1" fill="#ffffff"/>
+    </g>
+    <text class="bartext" x="606" y="27" text-anchor="end" font-weight="500">Tue 9:41</text>
+  </g>
+
+  <!-- Caption -->
+  <g transform="translate(120 292)">
+    <rect x="0" y="-2" width="8" height="8" rx="2" fill="url(#accent)"/>
+    <text class="hint" x="16" y="6">Every key, tap, click, scroll, and media button is ignored while locked. The shortcut always gets through.</text>
+  </g>
+</svg>

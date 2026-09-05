@@ -1,0 +1,19 @@
+name: Feature request
+description: Suggest an improvement.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the situation, ideally with the cat involved.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to happen?
+  - type: markdown
+    attributes:
+      value: |
+        Cat Protector aims to stay tiny. Features that make it simpler, safer, or more useful for people with a cat on the keyboard are very welcome. New settings are a harder sell than better defaults.
